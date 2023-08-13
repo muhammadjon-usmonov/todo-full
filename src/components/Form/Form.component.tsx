@@ -40,7 +40,8 @@ export const Form = forwardRef(
 
         if (!setEditingId) return;
         setEditingId("");
-
+          setColorName("")
+          setFontFamilyName("")
         evt.target.reset();
       }
     };
