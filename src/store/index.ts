@@ -25,7 +25,6 @@ export const main = createSlice({
         ...payload,
         id: crypto.randomUUID(),
       });
-
       localStorage.setItem("list", JSON.stringify(state.list));
     },
 
@@ -33,13 +32,11 @@ export const main = createSlice({
       state.list = state.list.map((item) => {
         return item.id === payload.id ? { ...item, ...payload } : item;
       });
-
       localStorage.setItem("list", JSON.stringify(state.list));
     },
 
     removeItem: (state, { payload }: PayloadAction<Pick<IListItem, "id">>) => {
       state.list = state.list.filter((item) => item?.id !== payload.id);
-
       localStorage.setItem("list", JSON.stringify(state.list));
     },
   },

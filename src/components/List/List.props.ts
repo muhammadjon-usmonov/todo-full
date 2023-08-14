@@ -1,5 +1,4 @@
 import { DetailedHTMLProps, HTMLAttributes, RefObject } from "react";
-
 export interface ListProps extends DetailedHTMLProps<HTMLAttributes<HTMLUListElement>, HTMLUListElement> {
   editingId?: string;
   setEditingId: (editingId: string) => void;

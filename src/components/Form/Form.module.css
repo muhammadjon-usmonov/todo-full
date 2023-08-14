@@ -6,13 +6,11 @@
   padding: 0 20px;
   padding-top: 10px;
   padding-bottom: 15px;
-
   background-color: rgb(178, 166, 187);
 }
 
 .form__top {
   margin-bottom: 10px;
-
   text-align: right;
 }
 
@@ -38,9 +36,7 @@
   width: 100%;
   margin-right: 10px;
   padding: 10px 15px;
-
   font-size: 28px;
-
   border: none;
   outline: none;
 }
@@ -48,6 +44,5 @@
 .form__button {
   width: 180px;
   padding: 10px;
-
   font-size: 28px;
 }

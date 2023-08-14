@@ -14,10 +14,8 @@ import styles from "./Form.module.css";
 export const Form = forwardRef(
   ({ editingId, setEditingId, colorName, fontFamilyName, setColorName, setFontFamilyName, ...props }: FormProps, ref: ForwardedRef<HTMLInputElement>) => {
     const dispatch = useDispatch();
-
     const handleSubmit = (evt: any) => {
       evt.preventDefault();
-
       const { title, font, color } = evt.target.elements;
 
       const newItem = {
