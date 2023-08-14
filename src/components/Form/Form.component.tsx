@@ -1,16 +1,11 @@
 import { forwardRef, ForwardedRef } from "react";
 import { useDispatch } from "react-redux";
 import cn from "classnames";
-
 import { addItem, editItem } from "store";
-
 import { colors } from "data/color.data";
 import { fonts } from "data/font.data";
-
 import { FormProps } from "./Form.props";
-
 import styles from "./Form.module.css";
-
 export const Form = forwardRef(
   ({ editingId, setEditingId, colorName, fontFamilyName, setColorName, setFontFamilyName, ...props }: FormProps, ref: ForwardedRef<HTMLInputElement>) => {
     const dispatch = useDispatch();
